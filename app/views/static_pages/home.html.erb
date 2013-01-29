@@ -1,0 +1,18 @@
+<% if user_signed_in? %>
+<h1>Beats Passion Meolodies</h1>
+
+<% else %>
+
+<div class="center hero-unit">
+	<h1>Welcome to ♥BPM </h1>
+
+	<h2>
+		Your go to source for Beats Passion And Melodies
+		
+	</h2>
+
+	<%= link_to "Sign up NIGGA!", new_user_registration_path,
+	class: "btn btn-large btn-primary" %>
+</div>
+
+<% end %>
